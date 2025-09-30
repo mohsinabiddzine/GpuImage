@@ -6,11 +6,9 @@ plugins {
 android {
     namespace = "com.dzm.gpuimage"
     compileSdk = 36
-    ndkVersion = "29.0.14033849"
 
     defaultConfig {
         minSdk = 24
-        targetSdk = 36
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
         }
