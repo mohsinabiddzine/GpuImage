@@ -2,7 +2,10 @@ jdk:
   - openjdk17
 
 before_install:
-  - sdkmanager "cmake;3.22.1" "ndk;25.2.9519653"
+  # You may need to install specific Android build tools / NDK versions
+  - sdkmanager "ndk;29.0.14033849"
+  - sdkmanager "cmake;3.22.1"
 
 install:
-  - ./gradlew :gpuimage:assembleRelease
+  # Publish only your library module
+  - ./gradlew :gpuimage:publishToMavenLocal -Pgroup=com.github.mohsinabiddzine -Pversion=v2.1.1-aligned
