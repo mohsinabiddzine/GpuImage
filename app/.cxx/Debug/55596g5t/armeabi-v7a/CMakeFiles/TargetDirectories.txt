@@ -1,0 +1,3 @@
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/armeabi-v7a/CMakeFiles/yuv-decoder.dir
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/armeabi-v7a/CMakeFiles/rebuild_cache.dir

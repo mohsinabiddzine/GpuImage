@@ -1,0 +1,3 @@
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/x86_64/CMakeFiles/yuv-decoder.dir
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/x86_64/CMakeFiles/edit_cache.dir
+/Users/Mac/AndroidStudioProjects/GpuImage/app/.cxx/Debug/55596g5t/x86_64/CMakeFiles/rebuild_cache.dir
