@@ -14,4 +14,4 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "GpuImage"
-include(":gpuimage") // rename module if you want
+include(":gpuimage") // keep consistent with folder name

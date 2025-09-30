@@ -3,7 +3,6 @@ plugins {
     id("maven-publish")
 }
 
-
 android {
     namespace = "com.dzm.gpuimage"
     compileSdk = 36
@@ -12,8 +11,6 @@ android {
     defaultConfig {
         minSdk = 24
         targetSdk = 36
-
-        // no applicationId here ⬅️ only in apps
         ndk {
             abiFilters += listOf("armeabi-v7a", "arm64-v8a", "x86", "x86_64")
         }
@@ -34,9 +31,15 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    // 👇 Important: this tells AGP to register the release variant for publishing
+    publishing {
+        singleVariant("release")
     }
 }
 
@@ -47,16 +50,16 @@ dependencies {
     implementation(libs.constraintlayout)
 }
 
-
-publishing {
-    publications {
-        create<MavenPublication>("release") {
-            from(components["release"])
-            groupId = "com.github.mohsinabiddzine"
-            artifactId = "gpuimage"
-            version = "2.1.1-aligned"
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                // AGP will provide the "release" component only after evaluation
+                from(components["release"])
+                groupId = "com.github.mohsinabiddzine"
+                artifactId = "gpuimage"
+                version = "2.1.1-aligned"
+            }
         }
     }
 }
-
-

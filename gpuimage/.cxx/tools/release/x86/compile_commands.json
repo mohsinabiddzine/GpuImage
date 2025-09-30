@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/Mac/Documents/GitHub/GpuImage/gpuimage/.cxx/RelWithDebInfo/2p2e623t/x86",
+  "command": "/Users/Mac/Library/Android/sdk/ndk/29.0.14033849/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang --target=i686-none-linux-android24 --sysroot=/Users/Mac/Library/Android/sdk/ndk/29.0.14033849/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dyuv_decoder_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -O2 -g -DNDEBUG -fPIC -o CMakeFiles/yuv-decoder.dir/yuv-decoder.c.o -c /Users/Mac/Documents/GitHub/GpuImage/gpuimage/src/main/cpp/yuv-decoder.c",
+  "file": "/Users/Mac/Documents/GitHub/GpuImage/gpuimage/src/main/cpp/yuv-decoder.c"
+}
+]
